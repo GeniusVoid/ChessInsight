@@ -68,16 +68,16 @@ dependencies {
 
     // Ktor for networking
     val ktorVersion = "2.3.7"
-    implementation("io.ktor:ktor-client-core:\$ktorVersion")
-    implementation("io.ktor:ktor-client-android:\$ktorVersion")
-    implementation("io.ktor:ktor-client-content-negotiation:\$ktorVersion")
-    implementation("io.ktor:ktor-serialization-kotlinx-json:\$ktorVersion")
+    implementation("io.ktor:ktor-client-core:$ktorVersion")
+    implementation("io.ktor:ktor-client-android:$ktorVersion")
+    implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
 
     // Room for Database
     val roomVersion = "2.6.1"
-    implementation("androidx.room:room-runtime:\$roomVersion")
-    implementation("androidx.room:room-ktx:\$roomVersion")
-    kapt("androidx.room:room-compiler:\$roomVersion")
+    implementation("androidx.room:room-runtime:$roomVersion")
+    implementation("androidx.room:room-ktx:$roomVersion")
+    kapt("androidx.room:room-compiler:$roomVersion")
 
     // Chesslib
     implementation("com.github.bhlangonijr:chesslib:1.3.3")

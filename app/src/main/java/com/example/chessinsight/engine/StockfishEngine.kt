@@ -31,8 +31,10 @@ class StockfishEngine(private val binaryPath: String) {
             // Read output in background
             Thread {
                 try {
-                    var line: String?
-                    while (isRunning.get() && reader?.readLine().also { line = it } != null) {
+                    var line: String? = null
+                    while (isRunning.get()) {
+                        line = reader?.readLine()
+                        if (line == null) break
                         _engineOutput.value = line ?: ""
                     }
                 } catch (e: Exception) {
